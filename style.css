@@ -121,6 +121,21 @@ nav {
   background: url(./assets/hero-circle.png) no-repeat center;
   min-height: 35rem;
   max-width: 35rem;
+  position: relative;
+}
+
+.badge h4 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  background-color: var(--secondary-color);
+  color: var(--bg-color);
+  padding: 0.8rem 1.6rem;
+  display: inline-block;
+  border-radius: 10rem;
+  position: absolute;
+  top: 5.5rem;
+  right: 1rem;
+  box-shadow: 0 3px 27px 0 var(--secondary-color);
 }
 
 .mic {
