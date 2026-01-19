@@ -81,9 +81,9 @@ span:hover {
 }
 
 .para {
-  font-size: clamp(1.6rem, 2vw, 2rem);
+  font-size: clamp(1.4rem, 1rem + 1.2vw, 2rem);
   color: #fff;
-  line-height: 2.4;
+  line-height: 2;
 }
 
 /* Navigation Section */
@@ -210,6 +210,60 @@ hr {
   gap: 10rem;
 }
 
+/* Why Choose Section */
+
+.choose-section {
+  background-color: #230e3d;
+}
+
+.why-choose {
+  padding-bottom: 12rem;
+}
+
+.why-choose > h2 {
+  margin-bottom: 4rem;
+  padding-top: 12rem;
+}
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas:
+    "header main    main"
+    "header card    card"
+    "footer footer  card2";
+  align-items: center;
+  gap: 3rem;
+}
+
+.card {
+  background-color: #35116540;
+  border-radius: 4rem;
+  padding: 4rem;
+}
+
+.cards .card-1 {
+  grid-area: header;
+}
+.cards .card-2 {
+  grid-area: main;
+}
+.cards .card-3 {
+  grid-area: card;
+}
+.cards .card-4 {
+  grid-area: footer;
+}
+.cards .card-5 {
+  grid-area: card2;
+}
+
+.card h2 {
+  font-size: clamp(2rem, 1.5rem + 1vw, 3rem);
+  font-weight: bold;
+  margin-bottom: 1.6rem;
+  margin-top: 1.6rem;
+}
+
 @media screen and (max-width: 576px) {
   .nav-menu,
   .btn {
@@ -221,6 +275,17 @@ hr {
   .total-cast {
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
+  }
+  .cards {
+    grid-template-areas:
+      "header   header    header"
+      "main     main      main"
+      "card     card      card"
+      "footer   footer    footer"
+      "card2    card2     card2";
+  }
+  .why-choose {
+    width: 95%;
   }
 }
 
@@ -239,5 +304,16 @@ hr {
   }
   .total-cast {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .cards {
+    grid-template-areas:
+      "header   header    header"
+      "main     main      main"
+      "card     card      card"
+      "footer   footer    footer"
+      "card2    card2     card2";
+  }
+  .why-choose {
+    width: 85%;
   }
 }
