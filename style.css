@@ -82,7 +82,7 @@ span:hover {
 
 .para {
   font-size: clamp(1.4rem, 1rem + 1.2vw, 2rem);
-  color: #fff;
+  color: #ffffff60;
   line-height: 1.5;
 }
 
@@ -306,6 +306,55 @@ hr {
   margin-bottom: 1.2rem;
 }
 
+/* Host Section */
+
+.host-section {
+  margin: 12rem auto;
+}
+
+.host-content {
+  margin-top: 4rem;
+  padding: 4rem;
+  background-color: #351165;
+  border-radius: 4rem;
+  display: flex;
+  align-items: center;
+  gap: 2.4rem;
+}
+.text h3 {
+  font-size: clamp(3.2rem, 1.5rem + 1vw, 4rem);
+  margin-bottom: 1.6rem;
+}
+
+.icons {
+  display: grid;
+  grid-template-columns: repeat(4, 2rem);
+  gap: 6rem;
+  justify-items: center;
+  margin-top: 1.6rem;
+}
+
+.icon {
+  border: 1px solid #533c72;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-left: 4rem;
+}
+
+.icon:hover {
+  background-color: #533c72;
+}
+
+.icon img {
+  width: 2rem;
+  height: 2rem;
+}
+
 @media screen and (max-width: 576px) {
   .nav-menu,
   .btn {
@@ -334,6 +383,25 @@ hr {
     grid-template-columns: 1fr;
     gap: 3rem;
     width: 95%;
+  }
+  .host-content {
+    margin-top: 4rem;
+    padding: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 1.4rem;
+  }
+  .icon {
+    margin-left: 1rem;
+  }
+  .host-content {
+    width: 95%;
+  }
+  .icons {
+    gap: clamp(8rem, 2rem + 2vw, 6rem);
   }
 }
 
@@ -368,6 +436,9 @@ hr {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
+    width: 85%;
+  }
+  .host-content {
     width: 85%;
   }
 }
