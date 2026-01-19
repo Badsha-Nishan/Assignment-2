@@ -355,6 +355,33 @@ hr {
   height: 2rem;
 }
 
+/* Footer Section */
+
+footer {
+  background: url(./assets/footer-bg.png) no-repeat center / cover;
+  max-width: 160rem;
+  min-height: 41.2rem;
+  text-align: center;
+  padding: 10rem;
+}
+
+.footer-icons {
+  margin-bottom: 3.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.f-icon {
+  max-width: 55rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 3rem;
+  gap: 3rem;
+}
+
 @media screen and (max-width: 576px) {
   .nav-menu,
   .btn {
