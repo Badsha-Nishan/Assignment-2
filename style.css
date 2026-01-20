@@ -131,22 +131,50 @@ nav {
 
 /* Hero Section */
 
-.hero {
-  background: url(./assets/hero-bg.png) no-repeat center / contain;
-  min-height: 76rem;
+.hero-section {
+  background: url(./assets/hero-bg.png) no-repeat center / cover;
   display: flex;
   align-items: center;
+  justify-content: center;
   flex-direction: column;
-  padding-top: 7rem;
   margin-top: 3rem;
   border-top: 1px solid rgb(110, 108, 108);
+  padding: 10rem;
+}
+
+.hero {
+  width: 100%;
+  max-width: 120rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 3rem;
 }
 
 .microphone {
-  background: url(./assets/hero-circle.png) no-repeat center / contain;
-  min-height: 30rem;
-  max-width: 30rem;
   position: relative;
+}
+
+.mic {
+  position: relative;
+  width: 100%;
+}
+
+.circle {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.mic-white {
+  position: absolute;
+  inset: 0;
+  width: 70%;
+  height: 70%;
+  left: 5.5rem;
+  top: 5rem;
+  object-fit: contain;
 }
 
 .badge > h4::after {
@@ -190,14 +218,6 @@ nav {
   box-shadow: 0 3px 27px 0 var(--secondary-color);
 }
 
-.mic {
-  padding: clamp(12rem, 4rem + 4vw, 8rem);
-}
-
-.mic img {
-  width: 100%;
-}
-
 .hero-content {
   margin-top: 3rem;
   text-align: center;
@@ -218,7 +238,7 @@ nav {
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  margin-top: 15rem;
+  margin-top: 5rem;
   margin-bottom: 12rem;
 }
 .podcast-content {
@@ -271,7 +291,7 @@ hr {
     "header main    main"
     "header card    card"
     "footer footer  card2";
-  align-items: center;
+  align-items: stretch;
   gap: 3rem;
 }
 
@@ -311,6 +331,7 @@ hr {
   grid-template-columns: repeat(3, 1fr);
   gap: 3rem;
   justify-items: center;
+  justify-content: center;
 }
 
 .featured-section h2 {
@@ -453,6 +474,9 @@ footer {
   .btn {
     display: none;
   }
+  .t-align {
+    width: 95%;
+  }
   .hamburger img {
     display: block;
   }
@@ -502,6 +526,9 @@ footer {
   .icons {
     gap: 5rem;
   }
+  .circle img {
+    width: 70%;
+  }
 }
 
 /* For Medium Device */
@@ -541,5 +568,8 @@ footer {
   }
   .host-content {
     width: 85%;
+  }
+  .circle img {
+    width: 80%;
   }
 }
