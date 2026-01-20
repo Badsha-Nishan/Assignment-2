@@ -480,6 +480,18 @@ footer {
   .hamburger img {
     display: block;
   }
+  .microphone {
+    left: 4rem;
+  }
+  .mic-white {
+    left: 3.5rem;
+    top: 4rem;
+    width: 60%;
+    height: 60%;
+  }
+  .circle {
+    width: 80%;
+  }
   .total-cast {
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
